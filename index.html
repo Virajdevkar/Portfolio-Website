@@ -43,45 +43,72 @@
                     <h1 class="sub-title">About me</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sint odit veniam consequatur
                         rem similique? Minima deserunt, et quae nesciunt accusantium autem consequatur voluptas animi
-                        laboriosam ipsum, inventore culpa quibusdam debitis possimus dolorem, quisquam excepturi sunt
-                        rerum odio iure Lorem ipsum dolor sie amet dolorem sed, alias quasi ut reiciendis soluta
+                        laboriosam ipsum, inventore culpaor sie amet dolorem sed, alias quasi ut reiciendis soluta
                         provident rerum fugit quod sit quibusdam! Error!
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
                             <li><span>Web Development</span><br> Web Application Development</li>
                             <li><span>App Development</span><br>Android Application Development</li>
-                            <li><span>ML</span><br>Machine Learning using python</li>
+                            <li><span>ML</span><br>Machine Learning using Python</li>
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>School--(2015-2018)</span><br> JSPM Sarati</li>
-                            <li><span>College--(2018-2020)</span><br>ADJC , Solapur</li>
-                            <li><span>B.E--(2020-NOW)</span><br>JSPM's BSIOTR Wagholi</li>
-                        </ul>
-                    </div>
+                    </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <!----------------------------services----------------------------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur afaefae af adipis wadwadaw</p>
+                        <a href="#">Learn More</a>
+                </div>
+                
+                <div>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sanam, quo
+                        dol.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>ML Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing equam non, nam, quo
+                        doloremque fodio.</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
     <script>
 
-        var tablinks = document.getElementsByClassName(tab-links);
-        var tabcontents = document.getElementsByClassName(tab-contents);
+        var tablinks = document.getElementsByClassName(tab - links);
+        var tabcontents = document.getElementsByClassName(tab - contents);
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link")
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab")
             }
+            event.currentTarget.classList.add("active-link");
         }
     </script>
 
