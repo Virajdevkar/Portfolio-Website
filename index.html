@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</li>
+                    <li><a href="#">About</li>
+                    <li><a href="#">Service</li>
+                    <li><a href="#">Portfolio</li>
+                    <li><a href="#">Contact</li>
+
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <!-- <p>FULL STACK DEVELOPER</p> -->
+                <p>FULL STACK DEVELOPER</p>
+                <h1>Hi, I'm <span>Viraj</span><br> From Pune,India </h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------------------------About--------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image1.png.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sint odit veniam consequatur
+                        rem similique? Minima deserunt, et quae nesciunt accusantium autem consequatur voluptas animi
+                        laboriosam ipsum, inventore culpa quibusdam debitis possimus dolorem, quisquam excepturi sunt
+                        rerum odio iure Lorem ipsum dolor sie amet dolorem sed, alias quasi ut reiciendis soluta
+                        provident rerum fugit quod sit quibusdam! Error!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Web Application Development</li>
+                            <li><span>App Development</span><br>Android Application Development</li>
+                            <li><span>ML</span><br>Machine Learning using python</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>School--(2015-2018)</span><br> JSPM Sarati</li>
+                            <li><span>College--(2018-2020)</span><br>ADJC , Solapur</li>
+                            <li><span>B.E--(2020-NOW)</span><br>JSPM's BSIOTR Wagholi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName(tab-links);
+        var tabcontents = document.getElementsByClassName(tab-contents);
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
