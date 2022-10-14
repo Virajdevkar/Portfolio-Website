@@ -16,15 +16,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo2.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home </li>
                     <li><a href="#">About</li>
                     <li><a href="#">Service</li>
                     <li><a href="#">Portfolio</li>
                     <li><a href="#">Contact</li>
-
-
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <!-- <p>FULL STACK DEVELOPER</p> -->
@@ -54,8 +54,8 @@
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
                             <li><span>Web Development</span><br> Web Application Development</li>
-                            <li><span>App Development</span><br>Android Application Development</li>
-                            <li><span>ML</span><br>Machine Learning using Python</li>
+                            <li><span>Blockchain Development</span><br>Web 3 and Solidity</li>
+                            <li><span>DevOps</span><br>Cloud Computing and Cloud Native</li>
                         </ul>
                     </div>
 
@@ -191,6 +191,17 @@
             event.currentTarget.classList.add("active-link");
         }
     </script>  
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
     
 
 </body>
