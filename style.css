@@ -392,6 +392,7 @@ nav .fa{
 
 
 @media only screen and (max-width: 600px){
+
    #header{
         background-image: url(images/back.png);
     }
@@ -431,3 +432,6 @@ nav .fa{
         font-size: 40px;
       }
 }
+=======
+    
+ 
